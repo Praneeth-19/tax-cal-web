@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <title>signup</title>
+
+    <style>
+      body {
+        background-color: rgb(234, 210, 252);
+        margin: 50px;
+      }
+
+      .col-lg-8 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 50px;
+      }
+      .col-lg-4 {
+        border-radius: 10px;
+      }
+      .form {
+        padding: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-body py-5 px-md-5">
+      <div class="row row d-flex justify-content-center">
+        <div
+          class="col-lg-6 col-md-6 col-sm-6 form shadow p-3 mb-5 bg-white"
+          style="background-color: white"
+        >
+          <h2>Signup</h2>
+          <hr />
+          <form
+            method="POST"
+            action="signupadd.php"
+            enctype="multipart/form-data"
+          >
+            First Name <br /><input
+              type="text"
+              id="fname"
+              name="fname"
+              class="form-control container-fluid"
+              required
+            />
+            <br /><br />
+            Last Name <br /><input
+              type="text"
+              id="lname"
+              name="lname"
+              class="form-control container-fluid"
+              required
+            />
+            <br /><br />
+
+            Email<br /><input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control container-fluid"
+              required
+            />
+            <br /><br />
+            Phone<br /><input
+              type="text"
+              id="phone"
+              name="phone"
+              class="form-control container-fluid"
+              required
+            />
+            <br /><br />
+
+            Creat Password <br /><input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control container-fluid"
+              required
+            />
+            <br /><br />
+            Confirm Password <br /><input
+              type="confirm_password"
+              id="confirm_password"
+              name="confirm_password"
+              class="form-control container-fluid"
+              required
+            />
+            <br /><br />
+            Upload photo<br /><input
+              type="file"
+              id="file"
+              name="file"
+              class="form-control container-fluid"
+              required
+            />
+            <br /><br />
+            Admin Access
+            <select name="access">
+              <option selected value="NO">NO</option>
+              <option value="YES">YES</option></select
+            ><br /><br /><br /><br />
+
+            <input
+              type="submit"
+              name="submit"
+              class="btn btn-primary btn-lg btn-block container-fluid"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
