@@ -4,18 +4,15 @@
         <script src='ntp.js'></script>
     </head>
         <body>
-            
             <div id=outer><div class='ac b'>Income Tax Calculator in India AY 2023-24</div><div id=cover>
                 <form name=it><table class=main><col class=w60><col class=w40>
-                <tr><td>Does above income contains Salary ?
-                    (* per Budget 2023)<td><select id=opt onchange=itax2122();><option value='no' selected>No<option value='yes'>Yes</select>
+                <tr><td><p>Does above income contains Salary ?
+                   (*per Budget 2023)</p><td><select id=opt onchange=itax2122();><option value='no' selected>No<option value='yes'>Yes</select>
                 <tr class=stat><td>Select Status<td><select id=age ><option value='b60' selected>Below 60 years<option value='a60'> Between 60-80 years<option value='a80'> Above 80 years<option value=huf>HUF / NRE</select>
                 <tr><td>Income<td><input type=number id=tinc>
                 <tr><td>Eligible Deductions<td><input type=number id=ed>
                 <tr><td><button type=reset >Reset</button><td><button type=button onclick=itax2122();>Submit</button>
-                <tr><td>Net Taxable Income
-                    (after Standard Deduction)	
-                    <td><input class=op id=ninc >
+                <tr><td><p>Net Taxable Income (after Standard Deduction)</p><td><input class=op id=ninc >
                 <tr><td>Tax After Rebate<td><input class=op id=itax>
                 <tr><td>Surcharge<td><input class=op id=surch>
                 <tr><td>Health & Education Cess<td><input class=op id=ecess>
