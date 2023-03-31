@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Clear Tax</h1>
+
+<table id="customers">
+  <tr>
+    <th>persons</th>
+    <th>Income level</th>
+    <th>Less: Standard Deduction</th>
+    <th>Net income</th>
+    <th>Tax under both regimes</th>
+    <th>Additional Deductions
+
+        (over & above standard deduction) required in Old Regime for Break Even</th>
+        <th>Which Tax Regime to Old</th>
+        <th>Which Tax Regime  to New</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>₹7,00,000</td>
+    <td>₹50,000</td>
+    <td>₹6,50,000</td>
+    <td>₹0</td>
+    <td>₹1,50,000</td>
+    <td>You will benefit only in new regime</td>
+    <td>You will benefit only in new regime</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>₹8,00,000</td>
+    <td>₹50,000</td>
+    <td>₹7,50,000</td>
+    <td>₹36,400</td>
+    <td>₹1,38,500</td>
+    <td>Old regime: if deductions > Rs 1,38,500</td>
+    <td>New regime: if deductions> Rs 1,38,500</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>₹9,00,000</td>
+    <td>₹50,000</td>
+    <td>₹8,50,000</td>
+    <td>₹41,600</td>
+    <td>₹2,12,500</td>
+    <td>Old regime: if deductions > Rs 2,12,500</td>
+
+     <td> New regime: if deductions < Rs 2,12,500</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>₹10,00,000</td>
+    <td>₹50,000</td>
+    <td>₹9,50,000</td>
+    <td>₹54,600</td>
+    <td>₹2,50,000</td>
+    <td>Old regime: if deductions > Rs. 2,50,000</td>
+
+      <td>New regime: if deductions < Rs 2,50,000</td>
+    
+
+  </tr>
+  <tr>
+    <td>E</td>
+    <td>₹12,50,000</td>
+    <td>₹50,000</td>
+    <td>₹12,00,000</td>
+    <td>₹93,600</td>
+    <td>₹3,12,500</td>
+    <td>Old regime: if deductions > Rs. 3,12,500</td>
+
+      <td>New regime: if deductions < Rs 3,12,500</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>₹15,00,000</td>
+    <td>₹50,000</td>
+    <td>₹14,50,000</td>
+    <td>₹1,45,600</td>
+    <td>₹3,58,000</td>
+    <td>Old regime: if deductions > Rs. 3,58,000</td>
+
+      <td>New regime: if deductions < Rs 3,58,000</td>
+  </tr>
+  <tr>
+    <td>G</td>
+    <td>₹15,50,000</td>
+    <td>₹50,000</td>
+    <td>₹15,00,000</td>
+    <td>₹1,56,000</td>
+    <td>₹3,75,000</td>
+    <td>Old regime: if deductions > Rs. 3,75,000</td>
+
+      <td>New regime: if deductions > Rs 3,75,000</td>
+  </tr>
+  <tr>
+    <td>H</td>
+    <td>₹16,00,000</td>
+    <td>₹50,000</td>
+    <td>₹15,50,000</td>
+    <td>₹1,71,600</td>
+    <td>₹3,75,000</td>
+    <td>Old regime: if deductions > Rs. 3,75,000</td>
+
+     <td> New regime: if deductions < Rs 3,75,000</td>
+      
+      </td>
+  </tr>
+  </table>
+</body>
+</html>
+
