@@ -1,117 +1,96 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bootstrap.css" />
-
-    <title>signup</title>
-
-    <style>
-      body {
-        background-color: rgb(234, 210, 252);
-        margin: 50px;
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <title>Tax | Calculator</title>
+</head>
+<body>
+  <style>
+    *{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .frame {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      height: 500px;
+      margin-top: -200px;
+      margin-left: -200px;
+      border-radius: 8px;
+      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+      overflow: hidden;
+      background: #3FAF82;
+      color: #333;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       }
 
-      .col-lg-8 {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding: 50px;
-      }
-      .col-lg-4 {
-        border-radius: 10px;
-      }
-      .form {
-        padding: 100px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card-body py-5 px-md-5">
-      <div class="row row d-flex justify-content-center">
-        <div
-          class="col-lg-6 col-md-6 col-sm-6 form shadow p-3 mb-5 bg-white"
-          style="background-color: white"
-        >
-          <h2>Signup</h2>
-          <hr />
-          <form
-            method="POST"
-            action="signupadd.php"
-            enctype="multipart/form-data"
-          >
-            First Name <br /><input
-              type="text"
-              id="fname"
-              name="fname"
-              class="form-control container-fluid"
-              required
-            />
-            <br /><br />
-            Last Name <br /><input
-              type="text"
-              id="lname"
-              name="lname"
-              class="form-control container-fluid"
-              required
-            />
-            <br /><br />
+    .center {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      transform: translate(-50%,-50%);
+      cursor: pointer;
+    }
+    .title{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 50px;
+    }
+    .frgt{
+      color: #333;
+      margin-top: 8px;
+      text-decoration: none;
+    }
+    .content{
+      margin-top: 50px;
+    }
+</style>
+<section class="center">
+  <div class="frame">
+  <form action="register.jsp" method="post" class="sign-up-form">
+    <br/><h2 class="title" style="margin-top: 12px;">Sign up</h2>
+  <div class="input-field">
+    <i class="fas fa-user"></i>
+    <input type="text" name="name" placeholder="Name" required style="margin-top: 12px;"/>
+  </div>
+  <div class="input-field">
+    <i class="fas fa-phone"></i>
+    <input type="number" name="Contact_No" placeholder="Contact number" required style="margin-top: 12px;"/>
+  </div>
+  <div class="input-field">
+    <i class="fas fa-envelope"></i>
+    <input type="email" name="email" placeholder="Email" required style="margin-top: 12px;"/>
+  </div>
+  
+  <div class="input-field">
+    <i class="fas fa-lock"></i>
+    <input type="password" name="password" placeholder="Password" id="txtPassword" required style="margin-top: 12px;"/>
+  </div>
+   <div class="input-field">
+    <i class="fas fa-lock"></i>
+    <input type="password" name="confirmPassword" placeholder="Confirm Password" id="txtConfirmPassword" required style="margin-top: 12px;"/>
+  </div>
 
-            Email<br /><input
-              type="email"
-              id="email"
-              name="email"
-              class="form-control container-fluid"
-              required
-            />
-            <br /><br />
-            Phone<br /><input
-              type="text"
-              id="phone"
-              name="phone"
-              class="form-control container-fluid"
-              required
-            />
-            <br /><br />
-
-            Creat Password <br /><input
-              type="password"
-              id="password"
-              name="password"
-              class="form-control container-fluid"
-              required
-            />
-            <br /><br />
-            Confirm Password <br /><input
-              type="confirm_password"
-              id="confirm_password"
-              name="confirm_password"
-              class="form-control container-fluid"
-              required
-            />
-            <br /><br />
-            Upload photo<br /><input
-              type="file"
-              id="file"
-              name="file"
-              class="form-control container-fluid"
-              required
-            />
-            <br /><br />
-            Admin Access
-            <select name="access">
-              <option selected value="NO">NO</option>
-              <option value="YES">YES</option></select
-            ><br /><br /><br /><br />
-
-            <input
-              type="submit"
-              name="submit"
-              class="btn btn-primary btn-lg btn-block container-fluid"
-            />
-          </form>
-        </div>
-      </div>
+  <button class="btn transparent" id="sign-up-btn" style="text-decoration: none; margin-top: 12px;""><a href="#" style="text-decoration: none; margin-top: 12px;">Sign Up</a></button>
+  <div class="panel right-panel">
+    <div class="content">
+      <h3>One of us !</h3>
+      <p>
+      Already have an account! Log in YourSelf.
+      </p>
+      <button class="btn transparent" id="sign-up-btn" style="text-decoration: none;"><a href="login.html" style="text-decoration: none;">Log in</a></button>
     </div>
-  </body>
+    
+  </div>
+</div>
+</section>
+</form>
+</body>
 </html>
