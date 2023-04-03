@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rajendra Table</title>
+	<style>
+                 
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	min-height: .01%;
+	overflow-x: auto;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #ddd;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+ .table-responsive {
+    width: 70%;
+    margin: auto;
+}
+body {
+        border-left: 100px solid rgb(212, 221, 220);
+        border-right: 100px solid rgb(212, 221, 220);
+		border-bottom: 50px solid rgb(212, 221, 220);
+		border-top: 50px solid rgb(212, 221, 220);
+        padding: 20px;
+    }
+</style>
+
+<p><b>Salary Income of INR 12 lakhs for a salaried employee</b></p>
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th rowspan="2">Particulars</th>
+ <th colspan="2">FY 2023-24</th>
+<th colspan="2">FY 2022-23</th>
+</tr>
+<tr>
+<th>Old Regime</th>
+<th>New Regime</th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Salary</td>
+<td>12,00,000</td>
+<td>12,00,000</td>
+<td>12,00,000</td>
+<td>12,00,000</td>
+</tr>
+<tr>
+<td>Less: HRA exemption</td>
+<td>2,00,000</td>
+<td>NA</td>
+<td>2,00,000</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Less: LTA exemption</td>
+<td>50,000</td>
+<td>NA</td>
+<td>50,000</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Less: Standard deduction</td>
+<td>50,000</td>
+<td>50,000</td>
+<td>50,000</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Less: Section 80C deductions</td>
+<td>1,50,000</td>
+<td>NA</td>
+<td>1,50,000</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Less: Section 80D deductions for self</td>
+<td>25,000</td>
+<td>NA</td>
+<td>25,000</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Less: Section 80D deduction for senior citizen parents</td>
+<td>50,000</td>
+<td>NA</td>
+<td>50,000</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Less: Other deductions</td>
+<td>10,000</td>
+<td>NA</td>
+<td>10,000</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Taxable Income</td>
+<td>6,65,000</td>
+<td>11,50,000</td>
+<td>6,65,000</td>
+<td>12,00,000</td>
+</tr>
+<tr>
+<td>Tax Payable including cess (considering age is less than 60)</td>
+<td>47,320</td>
+<td>85,800</td>
+<td>47,320</td>
+<td>1,19,600</td>
+</tr>
+<tr>
+ <td>Remark</td>
+<td colspan="2">Old regime is beneficial</td>
+<td colspan="2">Old regime is beneficial</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<p><b>Let us understand with another example :</b></p>
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th rowspan="2">Particulars</th>
+<th colspan="2">FY 2023-24</th>
+<th colspan="2">FY 2022-23</th>
+</tr>
+<tr>
+<th>Old Regime</th>
+<th>New Regime</th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Salary</td>
+<td>12,00,000</td>
+<td>12,00,000</td>
+<td>12,00,000</td>
+<td>12,00,000</td>
+</tr>
+<tr>
+<td>Less: Standard deduction</td>
+<td>50,000</td>
+<td>NA</td>
+<td>50,000</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Less: 80C deductions</td>
+<td>50,000</td>
+<td>50,000</td>
+<td>50,000</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Taxable Income</td>
+<td>11,00,000</td>
+<td>11,50,000</td>
+<td>11,00,000</td>
+<td>12,00,000</td>
+</tr>
+<tr>
+<td>Tax Payable including cess(considering age is less than 60)</td>
+<td>1,48,200</td>
+<td>85,600</td>
+<td>1,48,200</td>
+<td>1,19,600</td>
+</tr>
+<tr>
+<td>Remark </td>
+<td colspan="2">New regime is more beneficial</td>
+<td colspan="2">New regime is more beneficial</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Some more examples showing taxability at different income levels:</b><br><b>Salary
+Income: Rs.5,00,000 FY 2022-23</b></p>
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th colspan="2">Particulars</th>
+<th>Old Regime</th>
+<th>New Regime </th>
+</tr>
+<tr>
+<td>Gross Income</td>
+<td></td>
+<td>500,000</td>
+<td>500,000</td>
+</tr>
+<tr>
+<td>Less :</td>
+<td>Std. Ded.</td>
+<td>50,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>80C,80D, etc.</td>
+<td>Zero</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>HRA</td>
+<td>Zero</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>LTA</td>
+<td>Zero</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net Taxable Income</td>
+<td></td>
+<td>450,000</td>
+<td>500,000</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Note:</b> There is NO impact on tax payments because of rebate u/s 87A.</p>
+
+<p><b>Salary Income: Rs.5,00,000 FY 2023-24</b></p>
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th colspan="2">Particulars</th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Income</td>
+<td></td>
+<td>500,000</td>
+<td>500,000</td>
+</tr>
+<tr>
+<td>Less:</td>
+<td>Std. Ded.</td>
+<td>50,000</td>
+<td>50,000</td>
+</tr>
+<tr>
+<td></td>
+<td>80C,80D, etc.</td>
+<td>Zero</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>HRA</td>
+<td>Zero</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>LTA</td>
+<td>Zero</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net Taxable Income</td>
+<td></td>
+<td>450,000</td>
+<td>450,000</td>
+</tr>
+ <tr>
+<td>Tax</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Note:</b> There is NO impact on tax payments because of rebate u/s 87A.</p>
+
+<p><b>Salary Income: Rs.7,00,000 FY 2022-23</b></p>
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th colspan="2">Particulars</th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Income</td>
+<td></td>
+<td>700,000</td>
+<td>700,000</td>
+</tr>
+<tr>
+<td>Less:</td>
+<td>Std. Ded.</td>
+<td>50,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>80C,80D, etc.</td>
+<td>150,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>HRA</td>
+<td>50,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>LTA</td>
+<td>Zero</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net Taxable Income</td>
+<td></td>
+<td>450,000</td>
+<td>700,000</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td></td>
+<td>0</td>
+<td>33,800</td>
+</tr>
+<tr>
+<td colspan="4"><b>Note:</b> There is NO impact on tax payments under the
+old regime because of rebate u/s 87A. However Tax is payable under the
+new regime therefore the Old regime is more beneficial.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<p><b>Salary Income: Rs.7,00,000 FY 2023-24</b></p>
+
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th colspan="2">Particulars</th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Income</td>
+<td></td>
+<td>700,000</td>
+<td>700,000</td>
+</tr>
+ <tr>
+<td>Less :</td>
+<td>Std. Ded.</td>
+<td>50,000</td>
+<td>50,000</td>
+</tr>
+<tr>
+<td></td>
+<td>80C,80D, etc.</td>
+<td>150,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>HRA</td>
+<td>50,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>LTA</td>
+<td>Zero</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net Taxable Income</td>
+<td></td>
+<td>450,000</td>
+<td>650,000</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="4"><b>Note:</b> There are tax payments under the old regime due
+to rebate u/s 87A and also under new regime also due to rebate u/s 87A
+as Introduced by Budget 2023 which says Income upto 7 lac is not taxable
+under the new Regime. </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Salary Income: Rs.8,00,000 FY 2022-23</b></p>
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th colspan="2">Particulars</th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Income</td>
+<td></td>
+<td>800,000</td>
+<td>800,000</td>
+</tr>
+<tr>
+<td>Less :</td>
+<td>Std. Ded.</td>
+<td>50,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>80C,80D, etc.</td>
+<td>150,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>HRA</td>
+<td>50,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>LTA</td>
+<td>Zero</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net Taxable Income</td>
+<td></td>
+<td>550,000</td>
+ <td>800,000</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td></td>
+<td>23,400</td>
+<td>46,800</td>
+</tr>
+<tr>
+<td colspan="4">Old Tax Regime saves more tax.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Salary Income: Rs.8,00,000 FY 2023-24</b></p>
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th colspan="2">Particulars</th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Income</td>
+<td></td>
+<td>800,000</td>
+<td>800,000</td>
+</tr>
+<tr>
+<td>Less :</td>
+<td>Std. Ded.</td>
+<td>50,000</td>
+<td>50,000</td>
+</tr>
+<tr>
+<td></td>
+<td>80C,80D, etc.</td>
+<td>150,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>HRA</td>
+<td>50,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>LTA</td>
+<td>Zero</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net Taxable Income</td>
+<td></td>
+<td>550,000</td>
+<td>750,000</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td></td>
+<td>23,400</td>
+<td>31,200</td>
+</tr>
+<tr>
+<td colspan="4">Old Tax Regime saves more tax.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Salary Income: Rs.15,00,000 FY 2022-23</b></p>
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th colspan="2">Particulars</th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Income</td>
+<td></td>
+<td>1,500,000</td>
+<td>1,500,000</td>
+</tr>
+<tr>
+ <td>Less :</td>
+<td>Std. Ded.</td>
+<td>50,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>80C,80D, etc.</td>
+<td>150,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>HRA</td>
+<td>75,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>LTA</td>
+<td>20,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net Taxable Income</td>
+<td></td>
+<td>1,205,000</td>
+<td>1,500,000</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td></td>
+<td>180,960</td>
+<td>195,000</td>
+</tr>
+<tr>
+<td colspan="4">Old Tax Regime saves more tax.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Salary Income: Rs.15,00,000 FY 2023-24</b></p>
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th colspan="2">Particulars</th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Income</td>
+<td></td>
+<td>1,500,000</td>
+<td>1,500,000</td>
+</tr>
+<tr>
+<td>Less :</td>
+<td>Std. Ded.</td>
+<td>50,000</td>
+<td>50,000</td>
+</tr>
+<tr>
+<td></td>
+<td>80C,80D, etc.</td>
+<td>150,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>HRA</td>
+<td>75,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>LTA</td>
+<td>20,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net Taxable Income</td>
+<td></td>
+<td>1,205,000</td>
+<td>1,450,000</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td></td>
+<td>180,960</td>
+<td>145,600</td>
+</tr>
+<tr>
+<td colspan="4">New Tax Regime saves more tax.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Salary Income : Rs.20,00,000 FY 2022-23</b></p>
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th colspan="2">Particulars</th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Income</td>
+<td></td>
+<td>2,000,000</td>
+<td>2,000,000</td>
+</tr>
+<tr>
+<td>Less :</td>
+<td>Std. Ded.</td>
+<td>50,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>80C,80D, etc.</td>
+<td>150,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>HRA</td>
+<td>75,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>LTA</td>
+<td>20,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net Taxable Income</td>
+<td></td>
+<td>1,705,000</td>
+<td>2,000,000</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td></td>
+<td>336,960</td>
+<td>351,000</td>
+</tr>
+<tr>
+<td colspan="4">Old Tax Regime saves more tax.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Salary Income : Rs.20,00,000 FY 2023-24</b></p>
+
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+<th colspan="2"></th>
+<th>Old Regime</th>
+<th>New Regime</th>
+</tr>
+<tr>
+<td>Gross Income</td>
+<td></td>
+<td>2,000,000</td>
+<td>2,000,000</td>
+</tr>
+<tr>
+<td>Less :</td>
+<td>Std. Ded.</td>
+<td>50,000</td>
+ <td>50,000</td>
+</tr>
+<tr>
+<td></td>
+<td>80C,80D, etc.</td>
+<td>150,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>HRA</td>
+<td>75,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>LTA</td>
+<td>20,000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net Taxable Income</td>
+<td></td>
+<td>1,705,000</td>
+<td>1,950,000</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td></td>
+<td>336,960</td>
+<td>296,400</td>
+</tr>
+<tr>
+<td colspan="4">New Tax Regime saves more tax.</td>
+</tr>
+</tbody>
+</table>
+</div>
