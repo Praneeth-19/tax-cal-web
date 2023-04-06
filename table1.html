@@ -1,139 +1,332 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-#customers {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04AA6D;
-  color: white;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
 <body>
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark ">
+                <a class="navbar-brand" href="#"><img class="growwel-logo" src="./img/logo tax.jpg" alt="" height="30px" width="80px"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./Aboutus.html">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tax Details
+                            </a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-light" href="./taxtable.html"">Tax Slab</a>
+                                <a class="dropdown-item text-light" href="./taxtable2.html">Both Tax Regimes</a>
+                                <a class="dropdown-item text-light" href="./table1.html">Tax Table </a>
+                            </div>
 
-<h1>Tax Table</h1>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Service
+                            </a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-light" href="#Assisted Tax Filing">Assisted Tax Filing</a>
+                                <a class="dropdown-item text-light" href="#Assisted TDS Preparation">Assisted TDS Preparation</a>
+                                <a class="dropdown-item text-light" href="#GST">GST</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./login.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./signup.html">Sign up</a>
+                            <!-- <a class="nav-link text-light" href="">Contact us</a> -->
+                        </li>
 
-<table id="customers">
-  <tr>
-    <th>persons</th>
-    <th>Income level</th>
-    <th>Less: Standard Deduction</th>
-    <th>Net income</th>
-    <th>Tax under both regimes</th>
-    <th>Additional Deductions
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-        (over & above standard deduction) required in Old Regime for Break Even</th>
-        <th>Which Tax Regime to Old</th>
-        <th>Which Tax Regime  to New</th>
-  </tr>
-  <tr>
-    <td>A</td>
-    <td>₹7,00,000</td>
-    <td>₹50,000</td>
-    <td>₹6,50,000</td>
-    <td>₹0</td>
-    <td>₹1,50,000</td>
-    <td>You will benefit only in new regime</td>
-    <td>You will benefit only in new regime</td>
-  </tr>
-  <tr>
-    <td>B</td>
-    <td>₹8,00,000</td>
-    <td>₹50,000</td>
-    <td>₹7,50,000</td>
-    <td>₹36,400</td>
-    <td>₹1,38,500</td>
-    <td>Old regime: if deductions > Rs 1,38,500</td>
-    <td>New regime: if deductions> Rs 1,38,500</td>
-  </tr>
-  <tr>
-    <td>C</td>
-    <td>₹9,00,000</td>
-    <td>₹50,000</td>
-    <td>₹8,50,000</td>
-    <td>₹41,600</td>
-    <td>₹2,12,500</td>
-    <td>Old regime: if deductions > Rs 2,12,500</td>
+    </div>
 
-     <td> New regime: if deductions < Rs 2,12,500</td>
-  </tr>
-  <tr>
-    <td>D</td>
-    <td>₹10,00,000</td>
-    <td>₹50,000</td>
-    <td>₹9,50,000</td>
-    <td>₹54,600</td>
-    <td>₹2,50,000</td>
-    <td>Old regime: if deductions > Rs. 2,50,000</td>
+</div>
 
-      <td>New regime: if deductions < Rs 2,50,000</td>
-    
 
-  </tr>
-  <tr>
-    <td>E</td>
-    <td>₹12,50,000</td>
-    <td>₹50,000</td>
-    <td>₹12,00,000</td>
-    <td>₹93,600</td>
-    <td>₹3,12,500</td>
-    <td>Old regime: if deductions > Rs. 3,12,500</td>
-
-      <td>New regime: if deductions < Rs 3,12,500</td>
-  </tr>
-  <tr>
-    <td>F</td>
-    <td>₹15,00,000</td>
-    <td>₹50,000</td>
-    <td>₹14,50,000</td>
-    <td>₹1,45,600</td>
-    <td>₹3,58,000</td>
-    <td>Old regime: if deductions > Rs. 3,58,000</td>
-
-      <td>New regime: if deductions < Rs 3,58,000</td>
-  </tr>
-  <tr>
-    <td>G</td>
-    <td>₹15,50,000</td>
-    <td>₹50,000</td>
-    <td>₹15,00,000</td>
-    <td>₹1,56,000</td>
-    <td>₹3,75,000</td>
-    <td>Old regime: if deductions > Rs. 3,75,000</td>
-
-      <td>New regime: if deductions > Rs 3,75,000</td>
-  </tr>
-  <tr>
-    <td>H</td>
-    <td>₹16,00,000</td>
-    <td>₹50,000</td>
-    <td>₹15,50,000</td>
-    <td>₹1,71,600</td>
-    <td>₹3,75,000</td>
-    <td>Old regime: if deductions > Rs. 3,75,000</td>
-
-     <td> New regime: if deductions < Rs 3,75,000</td>
+<style>
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h1>Clear Tax</h1>
+  
+  <table id="customers">
+    <tr>
+      <th>persons</th>
+      <th>Income level</th>
+      <th>Less: Standard Deduction</th>
+      <th>Net income</th>
+      <th>Tax under both regimes</th>
+      <th>Additional Deductions
+  
+          (over & above standard deduction) required in Old Regime for Break Even</th>
+          <th>Which Tax Regime to Old</th>
+          <th>Which Tax Regime  to New</th>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>₹7,00,000</td>
+      <td>₹50,000</td>
+      <td>₹6,50,000</td>
+      <td>₹0</td>
+      <td>₹1,50,000</td>
+      <td>You will benefit only in new regime</td>
+      <td>You will benefit only in new regime</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>₹8,00,000</td>
+      <td>₹50,000</td>
+      <td>₹7,50,000</td>
+      <td>₹36,400</td>
+      <td>₹1,38,500</td>
+      <td>Old regime: if deductions > Rs 1,38,500</td>
+      <td>New regime: if deductions> Rs 1,38,500</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>₹9,00,000</td>
+      <td>₹50,000</td>
+      <td>₹8,50,000</td>
+      <td>₹41,600</td>
+      <td>₹2,12,500</td>
+      <td>Old regime: if deductions > Rs 2,12,500</td>
+  
+       <td> New regime: if deductions < Rs 2,12,500</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>₹10,00,000</td>
+      <td>₹50,000</td>
+      <td>₹9,50,000</td>
+      <td>₹54,600</td>
+      <td>₹2,50,000</td>
+      <td>Old regime: if deductions > Rs. 2,50,000</td>
+  
+        <td>New regime: if deductions < Rs 2,50,000</td>
       
-      </td>
-  </tr>
-  </table>
+  
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>₹12,50,000</td>
+      <td>₹50,000</td>
+      <td>₹12,00,000</td>
+      <td>₹93,600</td>
+      <td>₹3,12,500</td>
+      <td>Old regime: if deductions > Rs. 3,12,500</td>
+  
+        <td>New regime: if deductions < Rs 3,12,500</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>₹15,00,000</td>
+      <td>₹50,000</td>
+      <td>₹14,50,000</td>
+      <td>₹1,45,600</td>
+      <td>₹3,58,000</td>
+      <td>Old regime: if deductions > Rs. 3,58,000</td>
+  
+        <td>New regime: if deductions < Rs 3,58,000</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>₹15,50,000</td>
+      <td>₹50,000</td>
+      <td>₹15,00,000</td>
+      <td>₹1,56,000</td>
+      <td>₹3,75,000</td>
+      <td>Old regime: if deductions > Rs. 3,75,000</td>
+  
+        <td>New regime: if deductions > Rs 3,75,000</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>₹16,00,000</td>
+      <td>₹50,000</td>
+      <td>₹15,50,000</td>
+      <td>₹1,71,600</td>
+      <td>₹3,75,000</td>
+      <td>Old regime: if deductions > Rs. 3,75,000</td>
+  
+       <td> New regime: if deductions < Rs 3,75,000</td>
+        
+        </td>
+    </tr>
+    </table>
+  </body>
+  </html>
 </body>
 </html>
+<section>
+  <style>
+    .foot {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+      
+      .container1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      
+      .ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      
+      .li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        text-decoration: underline;
+      }
+      </style>
+      <section class="foot">
+     <div class="container1">
+         <p>Copyright © 2023. All Rights Reserved.</p>
+        <ul class="ul">
+            <li class="li"><a href="#">Contact</a></li>
+        </ul>
+     </div>
+    </section>
+
+
+
+      <style>
+        footer
+        {
+          background-color: rgb(90, 85, 75);
+          height: 50vh;
+        }
+        .p1
+        {
+          color: green;
+          font-weight: bold;
+        }
+        .p2
+        {
+          color: white;
+        }
+        .typee
+        {
+          list-style-type: none;
+          text-decoration: none;
+          color: white;
+        
+        }
+        .marg
+        {
+          margin-left: 0px;
+          margin-bottom: 0%;
+        }
+        .marg
+        {
+          margin-top:50px;
+          margin-left: 100px;
+        }
+        .marg1
+        {
+          margin-left: 17px;
+        }
+        .marg2
+        {
+          margin-top: 50px;
+          margin-left: 16px;
+        }
+        .marg3
+        {
+          margin-left: 10px;
+        }
+      </style>
+      <footer>
+        <div class="container">
+            <div class="row contact-sec">
+                <div class="col-md-5 col-lg-5">
+                    <h2 class="p1 marg2">Tax<span class="p2"> Websites</span></h2>
+                    <div class="row marg3">
+                        <div class="col-sm-6">
+                            <p class="typee">Aadharsh Nagar,<br> Karimnagar 
+                                <br>Zip - 505001</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li class="typee"><a href="#" class="typee"><i class="fa fa-phone"></i> +91 9966373744</a></li>
+                                <li class="typee"><a href="#" class="typee"><i class="ti-email"></i> mailto:group-a@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-default typee marg1"> Contact Us</a>
+                </div>
+                <div class="col-md-5 col-lg-5 col-md-offset-2 col-lg-offset-2 marg">
+                    <h2 class="p1">Tax<span class="p2"> Details</span></h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="typee">Aadharsh Nagar, <br>Karimnagar 
+                                <br>Zip - 505001</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li class="typee"><a href="#" class="typee"><i class="fa fa-phone"></i> +91 999999999</a></li>
+                                <li class="typee"><a href="#" class="typee"><i class="ti-email"></i> mailto:group-b@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-default typee">Contact Us</a>
+                </div>
+            </div>
+            </div>
+    
+      </section>
+    </footer>
+  </section>
 

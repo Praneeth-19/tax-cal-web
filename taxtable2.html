@@ -1,172 +1,365 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Table</title>
-	<style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark ">
+                <a class="navbar-brand" href="#"><img class="growwel-logo" src="./img/logo tax.jpg" alt="" height="30px" width="80px"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./Aboutus.html">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tax Details
+                            </a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-light" href="./taxtable.html"">Tax Slab</a>
+                                <a class="dropdown-item text-light" href="./taxtable2.html">Both Tax Regimes</a>
+                                <a class="dropdown-item text-light" href="./table1.html">Tax Table </a>
+                            </div>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Service
+                            </a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-light" href="#Assisted Tax Filing">Assisted Tax Filing</a>
+                                <a class="dropdown-item text-light" href="#Assisted TDS Preparation">Assisted TDS Preparation</a>
+                                <a class="dropdown-item text-light" href="#GST">GST</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./login.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./signup.html">Sign up</a>
+                            <!-- <a class="nav-link text-light" href="">Contact us</a> -->
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+</div>
+
+<style>
                  
-table {
-	border-collapse: collapse;
-	width: 100%;
-	font-size: 14px;
-	line-height: 1.42857143;
-	color: #333;
-	font-family: 'Open Sans', sans-serif;
-	box-sizing: border-box;
-	min-height: .01%;
-	overflow-x: auto;
-}
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    min-height: .01%;
+    overflow-x: auto;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  
+  th {
+    background-color: #f2f2f2;
+  }
+   .table-responsive {
+      width: 70%;
+      margin: auto;
+  }
+      body {
+          border-left: 100px solid rgb(212, 221, 220);
+          border-right: 100px solid rgb(212, 221, 220);
+      border-bottom: 50px solid rgb(212, 221, 220);
+      border-top: 50px solid rgb(212, 221, 220);
+      padding: 20px;
+      }
+  </style>
+  
+  
+  </style>
+  <div class="col-md-12">
+  <div class="clearfix"></div>
+  <p>Let's get a brief over some of the indifferent points between the old and new tax
+  regimes:<br><b>For FY 2022-23</b></p>
+  <div class="table-responsive">
+  <table class="table">
+  <tbody>
+  <tr>
+  <th>Gross Income</th>
+  <th>Deductions and exemptions including Standard deduction</th>
+  <th>Tax under the old tax regime*</th>
+  <th>Tax under the new tax regime*</th>
+  </tr>
+  <tr>
+  <td>INR 8,00,000</td>
+  <td>INR 1,38,000</td>
+  <td>INR 47,000</td>
+  <td>INR 47,000</td>
+  </tr>
+  <tr>
+  <td>INR 10,00,000</td>
+  <td>INR 1,88,000</td>
+  <td>INR 78,000</td>
+  <td>INR 78,000</td>
+  </tr>
+  <tr>
+  <td>INR 12,00,000</td>
+  <td>INR 1,91,000</td>
+  <td>INR 1,20,000</td>
+  <td>INR 1,20,000</td>
+  </tr>
+  <tr>
+  <td>INR 15,00,000</td>
+  <td>INR 2,50,000</td>
+  <td>INR 1,95,000</td>
+  <td>INR 1,95,000</td>
+  </tr>
+  </tbody>
+  </table>
+   </div>
+  <p>*Tax amount has been rounded off to the nearest thousands <br><b>For FY 2023-24</b></p>
+  <div class="table-responsive">
+  <table class="table">
+  <tbody>
+  <tr>
+  <th>Gross Annual Income</th>
+  <th>Deductions and exemptions including Standard deduction</th>
+  <th>Tax under old regime</th>
+  <th>Tax under New tax regime*</th>
+  </tr>
+  <tr>
+  <td>INR 8,00,000</td>
+  <td>INR 2,12,500</td>
+  <td>INR 31,000</td>
+  <td>INR 31,000</td>
+  </tr>
+  <tr>
+  <td>INR 10,00,000</td>
+  <td>INR 3,00,000</td>
+  <td>INR 55,000</td>
+  <td>INR 55,000</td>
+  </tr>
+  <tr>
+  <td>INR 12,00,000</td>
+  <td>INR 3,50,000</td>
+  <td>INR 86,000</td>
+  <td>INR 86,000</td>
+  </tr>
+  <tr>
+  <td>INR 15,00,000</td>
+  <td>INR 4,08,000</td>
+  <td>INR 1,46,000</td>
+  <td>INR 1,46,000</td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  <p>*Tax amount has been rounded off to the nearest thousands</p>
+  <p>In the cases mentioned above, the taxpayer will be indifferent to both schemes. Both
+  schemes will result in approximately the same amount of tax.</p>
+  <div class="clearfix"></div>
+  <hr class="hr">
+  </div>
+  
+  <div class="col-md-12">
+  <h2 id="What-are-the-benefits-or-disadvantages-of-opting-for-both-tax-regimes">What are the
+  benefits or disadvantages of opting for both tax regimes?</h2>
+  <div class="clearfix"></div>
+  <p>The various Benefits or Disadvantages of the old and new tax regimes include</p>
+  <div class="table-responsive">
+  <table class="table">
+  <tbody>
+  <tr>
+  <th>Benefits</th>
+  <th>Disadvantages</th>
+  </tr>
+  <tr>
+  <th colspan="2">OLD TAX REGIME</th>
+  </tr>
+  <tr>
+  <td rowspan="2">Option to avail around 70 exemptions and deductions under
+  the Income Tax Act</td>
+  <td>Investment only in specified options were required to claim the tax
+  benefit.</td>
+  </tr>
+  <tr>
+  <td>Practice to submit false disclosures for investment proofs is prevalent
+  </td>
+  </tr>
+  <tr>
+  <th colspan="2">NEW TAX REGIME</th>
+  </tr>
+  <tr>
+  <td>Tax Rates Reduced </td>
+  <td rowspan="2">Not attractive to those who were already investing and have
+  binding premiums</td>
+  </tr>
+  <tr>
+  <td>No major tax saving options given, increasing cash flow in hands of
+  taxpayer</td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  <div class="clearfix"></div>
+  <hr class="hr">
+  </div>
+  
+</body>
+</html>
+<section>
+  <style>
+    .foot {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+      
+      .container1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      
+      .ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      
+      .li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        text-decoration: underline;
+      }
+      </style>
+      <section class="foot">
+     <div class="container1">
+         <p>Copyright © 2023. All Rights Reserved.</p>
+        <ul class="ul">
+            <li class="li"><a href="#">Contact</a></li>
+        </ul>
+     </div>
+    </section>
 
-th, td {
-	text-align: left;
-	padding: 8px;
-	border: 1px solid #ddd;
-	-webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: transparent;
-}
 
 
-th {
-	background-color: #f2f2f2;
-}
- .table-responsive {
-    width: 70%;
-    margin: auto;
-}
-    body {
-        border-left: 100px solid rgb(212, 221, 220);
-        border-right: 100px solid rgb(212, 221, 220);
-		border-bottom: 50px solid rgb(212, 221, 220);
-		border-top: 50px solid rgb(212, 221, 220);
-		padding: 20px;
-    }
-</style>
+      <style>
+        footer
+        {
+          background-color: rgb(90, 85, 75);
+          height: 50vh;
+        }
+        .p1
+        {
+          color: green;
+          font-weight: bold;
+        }
+        .p2
+        {
+          color: white;
+        }
+        .typee
+        {
+          list-style-type: none;
+          text-decoration: none;
+          color: white;
+        
+        }
+        .marg
+        {
+          margin-left: 0px;
+          margin-bottom: 0%;
+        }
+        .marg
+        {
+          margin-top:50px;
+          margin-left: 100px;
+        }
+        .marg1
+        {
+          margin-left: 17px;
+        }
+        .marg2
+        {
+          margin-top: 50px;
+          margin-left: 16px;
+        }
+        .marg3
+        {
+          margin-left: 10px;
+        }
+      </style>
+      <footer>
+        <div class="container">
+            <div class="row contact-sec">
+                <div class="col-md-5 col-lg-5">
+                    <h2 class="p1 marg2">Tax<span class="p2"> Websites</span></h2>
+                    <div class="row marg3">
+                        <div class="col-sm-6">
+                            <p class="typee">Aadharsh Nagar,<br> Karimnagar 
+                                <br>Zip - 505001</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li class="typee"><a href="#" class="typee"><i class="fa fa-phone"></i> +91 9966373744</a></li>
+                                <li class="typee"><a href="#" class="typee"><i class="ti-email"></i> mailto:group-a@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-default typee marg1"> Contact Us</a>
+                </div>
+                <div class="col-md-5 col-lg-5 col-md-offset-2 col-lg-offset-2 marg">
+                    <h2 class="p1">Tax<span class="p2"> Details</span></h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="typee">Aadharsh Nagar, <br>Karimnagar 
+                                <br>Zip - 505001</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li class="typee"><a href="#" class="typee"><i class="fa fa-phone"></i> +91 999999999</a></li>
+                                <li class="typee"><a href="#" class="typee"><i class="ti-email"></i> mailto:group-b@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-default typee">Contact Us</a>
+                </div>
+            </div>
+            </div>
+    
+      </section>
+    </footer>
+  </section>
 
-
-</style>
-<div class="col-md-12">
-<div class="clearfix"></div>
-<p>Let's get a brief over some of the indifferent points between the old and new tax
-regimes:<br><b>For FY 2022-23</b></p>
-<div class="table-responsive">
-<table class="table">
-<tbody>
-<tr>
-<th>Gross Income</th>
-<th>Deductions and exemptions including Standard deduction</th>
-<th>Tax under the old tax regime*</th>
-<th>Tax under the new tax regime*</th>
-</tr>
-<tr>
-<td>INR 8,00,000</td>
-<td>INR 1,38,000</td>
-<td>INR 47,000</td>
-<td>INR 47,000</td>
-</tr>
-<tr>
-<td>INR 10,00,000</td>
-<td>INR 1,88,000</td>
-<td>INR 78,000</td>
-<td>INR 78,000</td>
-</tr>
-<tr>
-<td>INR 12,00,000</td>
-<td>INR 1,91,000</td>
-<td>INR 1,20,000</td>
-<td>INR 1,20,000</td>
-</tr>
-<tr>
-<td>INR 15,00,000</td>
-<td>INR 2,50,000</td>
-<td>INR 1,95,000</td>
-<td>INR 1,95,000</td>
-</tr>
-</tbody>
-</table>
- </div>
-<p>*Tax amount has been rounded off to the nearest thousands <br><b>For FY 2023-24</b></p>
-<div class="table-responsive">
-<table class="table">
-<tbody>
-<tr>
-<th>Gross Annual Income</th>
-<th>Deductions and exemptions including Standard deduction</th>
-<th>Tax under old regime</th>
-<th>Tax under New tax regime*</th>
-</tr>
-<tr>
-<td>INR 8,00,000</td>
-<td>INR 2,12,500</td>
-<td>INR 31,000</td>
-<td>INR 31,000</td>
-</tr>
-<tr>
-<td>INR 10,00,000</td>
-<td>INR 3,00,000</td>
-<td>INR 55,000</td>
-<td>INR 55,000</td>
-</tr>
-<tr>
-<td>INR 12,00,000</td>
-<td>INR 3,50,000</td>
-<td>INR 86,000</td>
-<td>INR 86,000</td>
-</tr>
-<tr>
-<td>INR 15,00,000</td>
-<td>INR 4,08,000</td>
-<td>INR 1,46,000</td>
-<td>INR 1,46,000</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>*Tax amount has been rounded off to the nearest thousands</p>
-<p>In the cases mentioned above, the taxpayer will be indifferent to both schemes. Both
-schemes will result in approximately the same amount of tax.</p>
-<div class="clearfix"></div>
-<hr class="hr">
-</div>
-
-<div class="col-md-12">
-<h2 id="What-are-the-benefits-or-disadvantages-of-opting-for-both-tax-regimes">What are the
-benefits or disadvantages of opting for both tax regimes?</h2>
-<div class="clearfix"></div>
-<p>The various Benefits or Disadvantages of the old and new tax regimes include</p>
-<div class="table-responsive">
-<table class="table">
-<tbody>
-<tr>
-<th>Benefits</th>
-<th>Disadvantages</th>
-</tr>
-<tr>
-<th colspan="2">OLD TAX REGIME</th>
-</tr>
-<tr>
-<td rowspan="2">Option to avail around 70 exemptions and deductions under
-the Income Tax Act</td>
-<td>Investment only in specified options were required to claim the tax
-benefit.</td>
-</tr>
-<tr>
-<td>Practice to submit false disclosures for investment proofs is prevalent
-</td>
-</tr>
-<tr>
-<th colspan="2">NEW TAX REGIME</th>
-</tr>
-<tr>
-<td>Tax Rates Reduced </td>
-<td rowspan="2">Not attractive to those who were already investing and have
-binding premiums</td>
-</tr>
-<tr>
-<td>No major tax saving options given, increasing cash flow in hands of
-taxpayer</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="clearfix"></div>
-<hr class="hr">
-</div>

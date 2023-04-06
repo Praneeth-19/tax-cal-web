@@ -28,7 +28,7 @@ else if(inc<=750000&&inc>500000){tax=12500+((inc-500000)*10/100)}
 else if(inc<=500000&&inc>25000){tax=((inc-250000)*5/100)}
 else if(inc<=250000&&inc>0){tax=0}}
 if(inc<=500000&&inc>250000)tcredit=tax;
-if(inc>250000){tcredit=0};
+if(inc>500000){tcredit=0};
 tax=tax*1-tcredit*1;
 if(inc>5000000 && inc <=10000000){surch=tax*10/100;
 if(surch>0 && (age=='b60'||age=='huf') && (inc*1-tax*1.10) <=3687500){ mtr=surch*1-(inc*1-3687500*1-tax*1)};
@@ -38,7 +38,7 @@ if(inc>10000000){surch=tax*15/100;
 if(surch>0 && (age=='b60'||age=='huf') && (inc*1-tax*1.15) <=6906250){mtr=surch*1-(inc*1-6906250*1-tax*1)};
 if(surch>0 && age=='a60' && (inc*1-tax*1.15) <=6909000){mtr=surch*1-(inc*1-6909000*1-tax*1)};
 if(surch>0 && age=='a80' && (inc*1-tax*1.15) <=6920000){mtr=surch*1-(inc*1-6920000*1-tax*1)}}
-if(inc<=2500000){surch=0}
+if(inc<=5000000){surch=0}
 surch=surch*1-mtr*1;
 ttax=tax*1+surch*1;
 ecess=Math.round(ttax*.04);liab=ttax*1 + ecess*1;

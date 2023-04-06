@@ -1,82 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <title>Login</title>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Tax | Calculator</title>
 </head>
 <body>
-    <style>
-        *{
-          text-align: center;
-          font-family: 'Times New Roman', Times, serif;
-        }
-        .frame {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 600px;
-          height: 500px;
-          margin-top: -200px;
-          margin-left: -200px;
-          border-radius: 8px;
-          box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-          overflow: hidden;
-          background: #3FAF82;
-          color: #333;
-          font-family: 'Open Sans', Helvetica, sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          }
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark ">
+                <a class="navbar-brand" href="#"><img class="growwel-logo" src="./img/logo tax.jpg" alt="" height="30px" width="80px"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./Aboutus.html">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tax Details
+                            </a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-light" href="./taxtable.html"">Tax Slab</a>
+                                <a class="dropdown-item text-light" href="./taxtable2.html">Both Tax Regimes</a>
+                                <a class="dropdown-item text-light" href="./table1.html">Tax Table </a>
+                            </div>
 
-        .center {
-          position: absolute;
-          top: 40%;
-          left: 45%;
-          transform: translate(-50%,-50%);
-          cursor: pointer;
-        }
-        .title{
-          text-align: center;
-          font-family: 'Times New Roman', Times, serif;
-          margin-top: 50px;
-        }
-        .frgt{
-          color: #333;
-          margin-top: 8px;
-          text-decoration: none;
-        }
-        .content{
-          margin-top: 50px;
-        }
-    </style>
-    <section class="center">
-        <div class="frame">
-    <form action="login_code.jsp" method="post"class="sign-in-form">
-        <h2 class="title">Log In</h2>
-        <div class="input-field">
-          <i class="fas fa-user"></i>
-          <input type="email" name="email" placeholder="Email" required="" style="margin-top: 20px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Service
+                            </a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-light" href="#Assisted Tax Filing">Assisted Tax Filing</a>
+                                <a class="dropdown-item text-light" href="#Assisted TDS Preparation">Assisted TDS Preparation</a>
+                                <a class="dropdown-item text-light" href="#GST">GST</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./login.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./signup.html">Sign up</a>
+                            <!-- <a class="nav-link text-light" href="">Contact us</a> -->
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="input-field">
-          <i class="fas fa-lock"></i>
-          <input type="password" name="password" placeholder="Password" required="" style="margin-top: 12px;">
-        </div>
-        <input type="submit" value="Login" class="btn solid" style="margin-top: 24px;"/>
-      </form>
 
-      <button class="frgt"><a href="#" class="frgt">Forget password</a></button>
-
-      <div class="content">
-        <h3>New here...!</h3>
-        <p>
-         Sign Up Now . Create an Account.
-        </p>
-        <button class="btn transparent" id="sign-up-btn" style="text-decoration: none;"><a href="signup.html" style="text-decoration: none;">Sign Up</a></button>
-      </div>
     </div>
+
+</div>
+<style>
+  *{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .mainn
+  {
+    padding: 300px;
+    background-image: url(./img/bg\ img.jpeg);
+  }
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 500px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 8px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #3FAF82;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+
+  .center {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+  }
+  .title{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+  }
+  .frgt{
+    color: #333;
+    margin-top: 8px;
+    text-decoration: none;
+  }
+  .content{
+    margin-top: 50px;
+  }
+</style>
+<section class="mainn">
+<section class="center">
+  <div class="frame">
+<form action="login_code.jsp" method="post"class="sign-in-form">
+  <h2 class="title">Log In</h2>
+  <div class="input-field">
+    <i class="fas fa-user"></i>
+    <input type="email" name="email" placeholder="Email" required="" style="margin-top: 20px;">
+  </div>
+  <div class="input-field">
+    <i class="fas fa-lock"></i>
+    <input type="password" name="password" placeholder="Password" required="" style="margin-top: 12px;">
+  </div>
+  <input type="submit" value="Login" class="btn solid" style="margin-top: 24px; margin-bottom: 20px;"/>
+</form>
+
+<button class="frgt"><a href="#" class="frgt">Forget password</a></button>
+
+<div class="content">
+  <h3>New here...!</h3>
+  <p>
+   Sign Up Now . Create an Account.
+  </p>
+  <button class="btn transparent" id="sign-up-btn" style="text-decoration: none;"><a href="signup.html" style="text-decoration: none;">Sign Up</a></button>
+</div>
+</div>
+</section>
 </section>
 </body>
 </html>
+<section>
+  <style>
+    .foot {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+      
+      .container1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      
+      .ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      
+      .li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        text-decoration: underline;
+      }
+      </style>
+      <section class="foot">
+     <div class="container1">
+         <p>Copyright © 2023. All Rights Reserved.</p>
+        <ul class="ul">
+            <li class="li"><a href="#">Contact</a></li>
+        </ul>
+     </div>
+    </section>
+
+
+
+      <style>
+        footer
+        {
+          background-color: rgb(90, 85, 75);
+          height: 50vh;
+        }
+        .p1
+        {
+          color: green;
+          font-weight: bold;
+        }
+        .p2
+        {
+          color: white;
+        }
+        .typee
+        {
+          list-style-type: none;
+          text-decoration: none;
+          color: white;
+        
+        }
+        .marg
+        {
+          margin-left: 0px;
+          margin-bottom: 0%;
+        }
+        .marg
+        {
+          margin-top:50px;
+          margin-left: 100px;
+        }
+        .marg1
+        {
+          margin-left: 17px;
+        }
+        .marg2
+        {
+          margin-top: 50px;
+          margin-left: 16px;
+        }
+        .marg3
+        {
+          margin-left: 10px;
+        }
+      </style>
+      <footer>
+        <div class="container">
+            <div class="row contact-sec">
+                <div class="col-md-5 col-lg-5">
+                    <h2 class="p1 marg2">Tax<span class="p2"> Websites</span></h2>
+                    <div class="row marg3">
+                        <div class="col-sm-6">
+                            <p class="typee">Aadharsh Nagar,<br> Karimnagar 
+                                <br>Zip - 505001</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li class="typee"><a href="#" class="typee"><i class="fa fa-phone"></i> +91 9966373744</a></li>
+                                <li class="typee"><a href="#" class="typee"><i class="ti-email"></i> mailto:group-a@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-default typee marg1"> Contact Us</a>
+                </div>
+                <div class="col-md-5 col-lg-5 col-md-offset-2 col-lg-offset-2 marg">
+                    <h2 class="p1">Tax<span class="p2"> Details</span></h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="typee">Aadharsh Nagar, <br>Karimnagar 
+                                <br>Zip - 505001</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li class="typee"><a href="#" class="typee"><i class="fa fa-phone"></i> +91 999999999</a></li>
+                                <li class="typee"><a href="#" class="typee"><i class="ti-email"></i> mailto:group-b@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-default typee">Contact Us</a>
+                </div>
+            </div>
+            </div>
+    
+      </section>
+    </footer>
+  </section>
+
