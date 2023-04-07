@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GST</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark ">
+                    <a class="navbar-brand" href="#"><img class="growwel-logo" src="./img/logo tax.jpg" alt="" height="30px" width="80px"/></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-light"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./Home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./Aboutus.html">About us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Tax Details
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item text-light" href="./taxtable.html"">Old Regime</a>
+                                    <a class="dropdown-item text-light" href="./taxtable2.html">New Regime</a>
+                                    <a class="dropdown-item text-light" href="./table1.html">Table</a>
+                                </div>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Service
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item text-light" href="#Assisted Tax Filing">Assisted Tax Filing</a>
+                                    <a class="dropdown-item text-light" href="#Assisted TDS Preparation">Assisted TDS Preparation</a>
+                                    <a class="dropdown-item text-light" href="#GST">GST</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./login.html">Log in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./signup.html">Sign up</a>
+                                <!-- <a class="nav-link text-light" href="">Contact us</a> -->
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+    </div>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+       .head{
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 6%;
+            background-color: azure;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .income{
+            padding-left: 10px;
+        }
+        .wrapper{
+            background-color: rgb(236, 226, 212);
+            padding-left: 30px;
+        }
+        #real{
+            padding-left: 400px;
+        }
+        #big{
+            padding-top: 30px;
+        }
+        .sechead{
+            padding-top: 30px;
+            color: green;
+            padding-left: 40px;
+        }
+    </style> 
+
+<div class="bg-container pt-5 pb-5" id="GST">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h1 class="heading" style="margin-top: 48px;">GST</h1>
+                <p class="description">
+                    Act, Rule, Amendment, Notifications, etc. relating to GST Law issued by Central and/or State Government may be accessed from the websites of Centre and State respectively through the links provided below. <p>
+                </p>
+            </div>
+            <div>
+                <div class="d-flex flex-row justify-content-between">
+                    <button id="aboutButton" class="p-3 button selected-button" onclick="onClickAboutTab2()">
+                        CGST
+                    </button>
+                    <button id="timeToVisitButton" class="p-3 button" onclick="onClickTimeToVisitTab2()">
+                        SGST
+                    </button>
+                    <button id="attractionsButton" class="p-3 button" onclick="onClickAttractionsTab2()">
+                        IGST
+                    </button>
+                </div>
+                <div class="tabs-container">
+                    <div id="aboutTab2" class="p-3">
+                        <p class="tab-content">
+                            The CGST act has been enacted to make a provision for levy and collection of tax on intra-state supply of goods or services or both by the Central Government and the matters connected therewith or incidental thereto.    
+                        </p>
+                       <!-- <p>CGST stands for Central Goods and Services tax. It replaced all the previous taxes under the Central Government. Some examples of such taxes are central surcharges & cess and central excise duty. CGST is levied on the movement of goods within a state. </p>-->
+<p>To understand the meaning of CGST, let us take an example. </p>
+<p>If a manufacturer produces a good in West Bengal and sells it intrastate (within the state), both SGST and CGST will be levied. The former will go to the West Bengal State Government, whereas the latter will reach the Central Government. In most cases, the tax is divided equally between the State and Central Governments as per the GST council mandate. </p>
+<p>Let us see the CGST applicable on various goods in the following table. </p>
+
+<table border="2" cellpadding="8" cellspacing="4">
+    <thead>
+            <tr>
+            <th>Goods</th>
+            <th>CGST Percentage</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Household items like tea, coffee, edible oil, sugar, and spices, life-saving medicines, Indian sweets, and coal</td>
+        <td>2.5</td>
+       
+        </tr>
+        <tr>
+            <td>Computer products and processed foods</td>
+            <td>6</td>
+            
+        </tr>
+        <tr>
+            <td>Capital products, hair oils, toothpaste, soaps, and industrial goods</td>
+            <td>9</td>
+            
+        </tr>
+        <tr>
+            <td>ACs, motorcycles, refrigerators, luxury items</td>
+            <td>14</td>
+            
+        </tr>
+    </tbody>    
+</table>    
+
+
+                        
+                    </div>
+                    <div id="timeToVisitTab2" class="p-3">
+                        <p class="tab-content">
+                            SGST means State Goods and Services Tax. Under GST, an equivalent amount of SGST is a tax levied on intrastate supplies of both goods and services by the particular state government where the product sold is consumed.
+                        </p>
+                       <!-- <p>The GST collected by the State Government is known as SGST, which is applicable on transactions within its geographical boundaries. Under the new tax regime, previous state taxes like entertainment tax, VAT, and State Sales tax became non-functional. </p> -->
+<p>SGST stands for State Goods and Services tax, a single tax levied on intrastate supplies of goods and services, except for alcoholic liquor. It can be charged solely on a product’s transactional value – an amount the buyer needs to pay.  </p>
+<p>SGST features might vary state-wise since each State Government has individual acts. However, specific characteristics like taxable events, valuation, classification of goods and services, and measures are similar across the nation. </p>
+<p>Thus, this tax embodies the objective of this new tax regime: one tax, one nation. </p>
+<p>Refer to the table below to learn the maximum rate of SGST. </p>
+
+<table border="2" cellpadding="8" cellspacing="4">
+    <thead>
+            <tr>
+            <th>Goods</th>
+            <th>CGST Percentage</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Household amenities like tea, sugar, etc. Medicines, coal, and Indian sweets</td>
+        <td>2.5</td>
+       
+        </tr>
+        <tr>
+            <td>Processed food items like cheese and bread. Computers and laptops also fall under this group.</td>
+            <td>6</td>
+            
+        </tr>
+        <tr>
+            <td>Capital goods, soaps, toothpaste</td>
+            <td>9</td>
+            
+        </tr>
+        <tr>
+            <td>Air conditioners, refrigerators, high-end vehicles.</td>
+            <td>14</td>
+            
+        </tr>
+    </tbody>    
+</table> 
+                        
+                    </div>
+                    <div id="attractionsTab2" class="p-3">
+                        <p class="tab-content">
+                            The full form of IGST is Integrated Goods and Services Tax. Under GST, IGST is a tax levied on all interstate supplies of goods and/or services or across two or more states/Union Territories. Further, IGST levy and collection will be governed by the IGST Act, 2017, as amended from time to time.   
+                        </p>
+                       
+                      <!--  <p>IGST stands for Integrated Goods and Services tax. It is generally applicable during interstate transactions, i.e., transactions between two different states. Among the types of GST, it’s levied on supplies of products and services between two states and even on exports and imports (IGST + customs). The Central Government is responsible for its collection as per the IGST Act. Let’s simplify this with the help of an example. </p> -->
+<p>Suppose a manufacturer from West Bengal sells goods to a customer in Maharashtra. In this case, IGST will apply to the transaction value. The Central Government will collect this sum. Later, this amount will be divided between the consumer state – in this case, Maharashtra – and the Central Government.   </p>
+<p>Why does the tax go to the consumer state and not the manufacturing state? Because the buyer incurs the tax. </p>
+<p>Check the maximum rate of IGST applicable on different goods from the table below.  </p>
+
+<table border="2" cellpadding="8" cellspacing="4">
+    <thead>
+        <td colspan="5" align="center"></td>
+        <tr>
+            <th>Goods</th>
+            <th>CGST Percentage</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Household products like tea, sugar, etc. Indian sweets and life-saving drugs</td>
+        <td>5</td>
+       
+        </tr>
+        <tr>
+            <td>Cheese, bread, other processed food items, desktops, laptops, et al.</td>
+            <td>12</td>
+            
+        </tr>
+        <tr>
+            <td>Hair oil, toothpaste, soaps, capital goods</td>
+            <td>18</td>
+            
+        </tr>
+        <tr>
+            <td>Luxury items like ACs and refrigerators</td>
+            <td>28</td>
+            
+        </tr>
+    </tbody>
+</table>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .foot {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+      
+      .container1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      
+      .ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      
+      .li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        text-decoration: underline;
+      }
+      </style>
+      <section class="foot">
+     <div class="container1">
+         <p>Copyright © 2023. All Rights Reserved.</p>
+        <ul class="ul">
+            <li class="li"><a href="#">Contact</a></li>
+        </ul>
+     </div>
+    </section>
+
+
+
+      <style>
+        footer
+        {
+          background-color: rgb(90, 85, 75);
+          height: 50vh;
+        }
+        .p1
+        {
+          color: green;
+          font-weight: bold;
+        }
+        .p2
+        {
+          color: white;
+        }
+        .typee
+        {
+          list-style-type: none;
+          text-decoration: none;
+          color: white;
+        
+        }
+        .marg
+        {
+          margin-left: 0px;
+          margin-bottom: 0%;
+        }
+        .marg
+        {
+          margin-top:50px;
+          margin-left: 100px;
+        }
+        .marg1
+        {
+          margin-left: 17px;
+        }
+        .marg2
+        {
+          margin-top: 50px;
+          margin-left: 16px;
+        }
+        .marg3
+        {
+          margin-left: 10px;
+        }
+      </style>
+      <footer>
+        <div class="container">
+            <div class="row contact-sec">
+                <div class="col-md-5 col-lg-5">
+                    <h2 class="p1 marg2">Tax<span class="p2"> Websites</span></h2>
+                    <div class="row marg3">
+                        <div class="col-sm-6">
+                            <p class="typee">Aadharsh Nagar,<br> Karimnagar 
+                                <br>Zip - 505001</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li class="typee"><a href="#" class="typee"><i class="fa fa-phone"></i> +91 9966373744</a></li>
+                                <li class="typee"><a href="#" class="typee"><i class="ti-email"></i> mailto:group-a@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-default typee marg1"> Contact Us</a>
+                </div>
+                <div class="col-md-5 col-lg-5 col-md-offset-2 col-lg-offset-2 marg">
+                    <h2 class="p1">Tax<span class="p2"> Details</span></h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="typee">Aadharsh Nagar, <br>Karimnagar 
+                                <br>Zip - 505001</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li class="typee"><a href="#" class="typee"><i class="fa fa-phone"></i> +91 999999999</a></li>
+                                <li class="typee"><a href="#" class="typee"><i class="ti-email"></i> mailto:group-b@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-default typee">Contact Us</a>
+                </div>
+            </div>
+            </div>
+    
+      </section>
+    </footer>
+
+</body>
+
+</html>

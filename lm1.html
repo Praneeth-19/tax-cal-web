@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+<body>
+ 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark ">
+                    <a class="navbar-brand" href="#"><img class="growwel-logo" src="./img/logo tax.jpg" alt="" height="30px" width="80px"/></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-light"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./Home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./Aboutus.html">About us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Tax Details
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item text-light" href="./taxtable.html"">Old Regime</a>
+                                    <a class="dropdown-item text-light" href="./taxtable2.html">New Regime</a>
+                                    <a class="dropdown-item text-light" href="./table1.html">Table</a>
+                                </div>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Service
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item text-light" href="#Assisted Tax Filing">Assisted Tax Filing</a>
+                                    <a class="dropdown-item text-light" href="#Assisted TDS Preparation">Assisted TDS Preparation</a>
+                                    <a class="dropdown-item text-light" href="#GST">GST</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./login.html">Log in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./signup.html">Sign up</a>
+                                <!-- <a class="nav-link text-light" href="">Contact us</a> -->
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+    </div>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+       .head{
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 6%;
+            background-color: azure;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .income{
+            padding-left: 10px;
+        }
+        .wrapper{
+            background-color: rgb(236, 226, 212);
+            padding-left: 30px;
+        }
+        #real{
+            padding-left: 400px;
+        }
+        #big{
+            padding-top: 30px;
+        }
+        .sechead{
+            padding-top: 30px;
+            color: green;
+            padding-left: 40px;
+        }
+    </style>     
+        
+
+        <div class="bg-container pt-5 pb-5" id="Assisted TDS Preparation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h1 class="heading" style="margin-top: 48px;">TDS Preparation Service</h1>
+                        <p class="description">
+                           Form 24Q 26Q, 27Q, 27EQ - Covering TDS on Rent paid, Professional remuneration, Commission paid, Contractor payments, Interest Paid. In addition, forms also cover for payments made to non-residents (NRI).
+                        </p>
+                    </div>
+                     <!-- <div class="col-12 col-lg-5 mb-4">
+                      <img class="w-100" src="img/tds.jpeg" width="400px" height="320px" />
+                       <img class="w-100" src="img/rupee.avif" /> 
+                    </div> -->
+                    <div class="col-12 col-lg-12">
+                        <div class="d-flex flex-row justify-content-between">
+                            <button id="aboutButton" class="p-3 button selected-button" onclick="onClickAboutTab1()">
+                                Self Service
+                            </button>
+                            <button id="timeToVisitButton" class="p-3 button" onclick="onClickTimeToVisitTab1()">
+                                Expert Assisted
+                            </button>
+                           <button id="attractionsButton" class="p-3 button" onclick="onClickAttractionsTab1()">
+                            Tax Compliance Calendar
+                            </button>
+                        </div>
+                        <div class="tabs-container">
+                            <div id="aboutTab1" class="p-3">
+                                <p class="tab-content">
+                                    Self Service TDS preparation service is a do-it-yourself service where you have the opportunity to upload the TDS information using excel template or manually entering to the screens to prepare TDS FVU file which can be uploaded in to income tax department portal to complete the filing.</p>
+                                    <p class="tab-content">We (TDS Portal) covering Forms 24Q, 26Q, 27Q, 27EQ and others. For events like TDS on rent paid, professional remuneration, commission paid, contractor payments, interest paid, payments made to non-residents (NRI). BTW: We.in TDS is an authorised NSDL (Govt of India) utility. </p>  
+                                </p>
+
+                                <p><b>1. Select Self-Service TDS Preparation
+                                </b></p>
+                                <p>After logging into our account you can see two services offered by us, they are Self-Service TDS Preparation, and Expert Assisted TDS Preparation.</p>
+                                <p>For Self-Service TDS Preparation, you have two options, you can either download an excel template after choosing the appropriate TDS form and fill the form offline and later upload it at your convenience or else you can fill the Form Online and prepare your TDS FVU File.</p>
+                                <p><b>2. Download Excel Template
+                                </b></p>
+                                <p>On the top right corner of the Services screen you can see the Template button and form name, you can select the appropriate form, and click on the Template button to download the template.
+                                1.	26Q (Non Salary)
+                                2.	24Q (Salary)
+                                <p>
+                                <p><b> 3. Fill the Template</b></p>
+                                <p>
+                                1.	After downloading, you need to fill up the deductor details and the authorized person details in sheet 1.
+                                2.	Under sheet 2, you need to fill up the Challan details which you have paid.
+                                3.	Under sheet 3, you need to fill up the Deductee details from whom the TDS was deducted and enter the amount of TDS to be deposited under his PAN.
+                                </p>
+                                <p><b>4. Upload the Template</b></p>
+                                <p>
+                                1.	After filling up the details in the template you need to upload this template at  logging into our site. <p>
+                                <p>
+                                2.	To upload the templates please choose Self-Service TDS Preparation option and under that you can see an option which asks you to upload the template. Please select that and upload your excel template.
+                                </p>
+                                <p><b> 5. Review & eFile </b></p>
+                                <p>1.After uploading the excel you will be directly taken to Review & E File tab which will tell you errors (if any) in your uploaded template.</p>
+                                <p>2.In case, Interest to be paid (if any) for delay in deduction of TDS and for delay in payment of TDS and it also tells you the amount of late filing fees (if any) for late filing of TDS return</p>
+                                <p>3.You can pay the above interest and late filing fees through the link provided in Review & E File tab.
+                                </p>
+                                
+
+                            </div>
+                            <div id="timeToVisitTab1" class="p-3">
+                                <p class="tab-content">
+                                    Expert assisted TDS preparation and filing made online, faster and easier than ever. The service helps you share the information / documents for our expert team to prepare and file your TDS. Covering Form 24Q, 26Q, 27Q, 27EQ and others. <p>
+                                    <p class="tab-content">Form 24Q 26Q, 27Q, 27EQ - Covering TDS on Rent paid, Professional remuneration, Commission paid, Contractor payments, Interest Paid. In addition, forms also cover for payments made to non-residents (NRI). </p>       
+                                </p>
+                                <p><b>1. Select Expert Assisted TDS Preparation</b></p>
+                                <p>After register and logging into this account, choose Expert Assisted TDS Preparation for our Tax Consultant to file your TDS return. Here in this screen, you need to select Form Type, Financial Year, and the Quarter for which you are filing your TDS for. </p>
+                                <p><b>2. Upload files </b></p>
+                                <p> Then upload the files such as challans, deducted details, and other relevant documents. Once service is selected, Team will approach you to re-confirm to make sure you haven't missed any.</p>
+                                <p><b> 3. Making Payment</b><p>
+                                <p>Choose the service plan and make payment for it.</p>
+                                <p>Two Service plans are offered by us, which are: Our Tax Consultant preparing your TDS returns either for one quarter or for all the four quarters. Our CAs provide you the right FVU file for you to upload at the Income Tax Department website as it requires your DSC to complete the filing. Our team will assist in case you need any help in uploading the FVU file. </p>
+                                <p><b>4. Summary of Service</b></p>
+                                <p>After making the payment you will be given an acknowledgement which you can print and keep it for future reference purpose. </p>
+                                
+                            </div>
+                            <div id="attractionsTab1" class="p-3">
+                                <p class="tab-content">
+                                    Tax Compliance Calendar for FY 2022-23, covering important due dates for Income Tax Filing, GST (GSTR1, GSTR3B), TDS Payments, Preparation, and Filing, ROC, and general accounting from Apr 01st 2022 to Mar 31st 2023 with a primary focus on Individuals, Professionals, & SME Businesses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <style>
+            .foot {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 0;
+              }
+              
+              .container1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 1100px;
+                margin: 0 auto;
+              }
+              
+              .ul {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+              }
+              
+              .li a {
+                color: #fff;
+                text-decoration: none;
+              }
+              
+              li a:hover {
+                text-decoration: underline;
+              }
+              </style>
+              <section class="foot">
+             <div class="container1">
+                 <p>Copyright © 2023. All Rights Reserved.</p>
+                <ul class="ul">
+                    <li class="li"><a href="#">Contact</a></li>
+                </ul>
+             </div>
+            </section>
+        
+        
+        
+              <style>
+                footer
+                {
+                  background-color: rgb(90, 85, 75);
+                  height: 50vh;
+                }
+                .p1
+                {
+                  color: green;
+                  font-weight: bold;
+                }
+                .p2
+                {
+                  color: white;
+                }
+                .typee
+                {
+                  list-style-type: none;
+                  text-decoration: none;
+                  color: white;
+                
+                }
+                .marg
+                {
+                  margin-left: 0px;
+                  margin-bottom: 0%;
+                }
+                .marg
+                {
+                  margin-top:50px;
+                  margin-left: 100px;
+                }
+                .marg1
+                {
+                  margin-left: 17px;
+                }
+                .marg2
+                {
+                  margin-top: 50px;
+                  margin-left: 16px;
+                }
+                .marg3
+                {
+                  margin-left: 10px;
+                }
+              </style>
+              <footer>
+                <div class="container">
+                    <div class="row contact-sec">
+                        <div class="col-md-5 col-lg-5">
+                            <h2 class="p1 marg2">Tax<span class="p2"> Websites</span></h2>
+                            <div class="row marg3">
+                                <div class="col-sm-6">
+                                    <p class="typee">Aadharsh Nagar,<br> Karimnagar 
+                                        <br>Zip - 505001</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul>
+                                        <li class="typee"><a href="#" class="typee"><i class="fa fa-phone"></i> +91 9966373744</a></li>
+                                        <li class="typee"><a href="#" class="typee"><i class="ti-email"></i> group-a@gmail.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-default typee marg1"> Contact Us</a>
+                        </div>
+                        <div class="col-md-5 col-lg-5 col-md-offset-2 col-lg-offset-2 marg">
+                            <h2 class="p1">Tax<span class="p2"> Details</span></h2>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="typee">Aadharsh Nagar, <br>Karimnagar 
+                                        <br>Zip - 505001</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul>
+                                        <li class="typee"><a href="#" class="typee"><i class="fa fa-phone"></i> +91 999999999</a></li>
+                                        <li class="typee"><a href="#" class="typee"><i class="ti-email"></i> group-b@gmail.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-default typee">Contact Us</a>
+                        </div>
+                    </div>
+                    </div>
+            
+              </section>
+            </footer>
+    </body>
+    </html>        
